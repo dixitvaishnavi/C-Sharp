@@ -1,0 +1,6 @@
+public class Program {
+	public static int convert(int minutes) {
+		int seconds=minutes*60;
+		return seconds;
+	}
+}
