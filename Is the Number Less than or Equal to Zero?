@@ -1,0 +1,14 @@
+public class Program 
+{
+    public static bool LessThanOrEqualToZero(double a) 
+    {
+			bool result;
+    	if(a<=0){
+				result=true;
+			}
+			else{
+				result=false;
+			}
+			return result;
+    }
+}
