@@ -1,0 +1,36 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        string secretWord="giraffe";
+        string guess="";
+        int guessCount=0;
+        int guessLimit=3;
+        bool outOfGuesses=false;
+        
+        
+        while(guess!=secretWord && !outOfGuesses)
+        {
+            if(guessCount<guessLimit)
+            {
+                Console.WriteLine ("enter guess");
+           guess=Console.ReadLine();
+           guessCount++;
+            }
+            else{
+                outOfGuesses=true;
+            }
+           
+        }
+        if(outOfGuesses){
+            Console.Write("you lose");
+        }
+        else{
+            Console.Write("you win");
+        }
+        
+        
+    }
+}
