@@ -1,0 +1,18 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine (GetPow(3,2));
+    }
+    static int GetPow(int baseNum, int powNum)
+    {
+        int result=1;
+        for(int i=1;i<=powNum;i++)
+        {
+            result=result*baseNum;
+        }
+        return result;
+    }
+}
